@@ -39,11 +39,14 @@
   ],
   "to": "DESK",
   "tape": {
-    "xauusd": 4399.92,
+    "xauusd": 4396,
     "dxy": 99.39,
-    "us10y": 4.69,
-    "brent": 89,
-    "asof_et": "2026-08-17T07:46:00-04:00"
+    "us10y": 4.696,
+    "brent": 89.0,
+    "wti": 82.4,
+    "asof_et": "2026-08-17T08:01:00-04:00",
+    "source": "Bob oil handoff / Markets Insider / Yahoo BZ=F",
+    "note": "Brent ~89, not a $90 break. Quiet-open still valid."
   },
   "macro_score": {
     "ts_et": "2026-08-17T07:46:00-04:00",
