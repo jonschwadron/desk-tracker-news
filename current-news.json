@@ -57,5 +57,9 @@
     "ts_et": "2026-08-17T07:58:00-04:00",
     "book_effect": "hold",
     "note": "Seat split 17 Aug. Cards go to Desk (7acb6d1e), not MACRO (225f507a). HOLD 102034139 / SL 4050. No new long into minutes. Hormuz reopen would hurt the long. Quiet unless Hormuz actually reopens or minutes text is a shock."
-  }
+  },
+  "ea_no_fire": false,
+  "ea_no_fire_reason": "FOMC_MINUTES",
+  "ea_no_fire_until_et": "2026-08-19T14:30:00-04:00",
+  "ea_no_fire_from_et": "2026-08-19T13:00:00-04:00"
 }
