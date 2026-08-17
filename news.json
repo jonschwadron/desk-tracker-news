@@ -1,0 +1,112 @@
+[
+  {
+    "ts": "2026-08-17T07:45:00-04:00",
+    "agent": "NEWS",
+    "action": "scan",
+    "symbol": "XAUUSD",
+    "tf": null,
+    "payload": {
+      "agent": "NEWS",
+      "agent_id": "3f2295d1-7bdc-436c-a62c-3426d47747a6",
+      "ts_et": "2026-08-17T07:45:00-04:00",
+      "event": null,
+      "when_et": null,
+      "headline": null,
+      "source": null,
+      "url": null,
+      "correlating": [],
+      "gold_implication": "Stood up 17 Aug 2026 07:43 ET. First scan in flight. No book-moving card yet.",
+      "book_effect": null,
+      "impact": null,
+      "do_not_flatten": true,
+      "tickets_do_not_touch": [
+        {
+          "id": "102034139",
+          "side": "buy",
+          "lots": 0.05,
+          "entry": 4043.95,
+          "sl": 4050.0
+        }
+      ],
+      "to": "MACRO",
+      "quiet": true,
+      "routines": [
+        "0 8 * * 1-5",
+        "0 12 * * 1-5"
+      ]
+    }
+  },
+  {
+    "ts": "2026-08-17T07:46:00-04:00",
+    "agent": "NEWS",
+    "action": "card",
+    "symbol": "XAUUSD",
+    "tf": null,
+    "payload": {
+      "agent": "NEWS",
+      "agent_id": "3f2295d1-7bdc-436c-a62c-3426d47747a6",
+      "ts_et": "2026-08-17T07:46:00-04:00",
+      "do_not_flatten": true,
+      "tickets_do_not_touch": [
+        {
+          "id": "102034139",
+          "side": "buy",
+          "lots": 0.05,
+          "entry": 4043.95,
+          "sl": 4050.0
+        }
+      ],
+      "to": "MACRO",
+      "quiet": false,
+      "impact": "book_moving",
+      "event": "HORMUZ",
+      "when_et": "2026-08-17T00:00:00-04:00",
+      "headline": "US–Iran MoU expired today; Hormuz traffic near-zero (0 Sunday vs 31 prior weekend)",
+      "source": "AP/Reuters/CNBC",
+      "url": "https://www.reuters.com/world/middle-east/shipping-via-hormuz-strait-slows-after-tanker-attacks-data-shows-2026-08-16/",
+      "correlating": [
+        "Hormuz",
+        "Iran",
+        "oil"
+      ],
+      "gold_implication": "Deadline was known; gold only grinding ~4400, not ripping. HOLD the runner. No new long on the expiry itself. Escalation (implemented sanctions, shooting restart, dark-fleet zero) is the add trigger.",
+      "book_effect": "hold"
+    }
+  },
+  {
+    "ts": "2026-08-17T07:46:00-04:00",
+    "agent": "NEWS",
+    "action": "card",
+    "symbol": "XAUUSD",
+    "tf": null,
+    "payload": {
+      "agent": "NEWS",
+      "agent_id": "3f2295d1-7bdc-436c-a62c-3426d47747a6",
+      "ts_et": "2026-08-17T07:46:00-04:00",
+      "do_not_flatten": true,
+      "tickets_do_not_touch": [
+        {
+          "id": "102034139",
+          "side": "buy",
+          "lots": 0.05,
+          "entry": 4043.95,
+          "sl": 4050.0
+        }
+      ],
+      "to": "MACRO",
+      "quiet": false,
+      "impact": "book_moving",
+      "event": "FOMC_MINUTES",
+      "when_et": "2026-08-19T14:00:00-04:00",
+      "headline": "FOMC minutes (28–29 Jul) Wed 19 Aug 2:00 PM ET; meeting held 3.50–3.75%, three hike votes",
+      "source": "Federal Reserve Board",
+      "url": "https://www.federalreserve.gov/newsevents/2026-august.htm",
+      "correlating": [
+        "Fed",
+        "USD"
+      ],
+      "gold_implication": "Minutes predate 7 Aug NFP and 12 Aug CPI. WAIT / no new long into 2:00 PM ET Wednesday. Do not flatten 102034139 on minutes risk.",
+      "book_effect": "wait"
+    }
+  }
+]

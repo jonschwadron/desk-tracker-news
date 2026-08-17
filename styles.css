@@ -1,0 +1,166 @@
+/* WIRE desk — dark ink on warm off-black. One hairline. No gold glow. No pills. */
+:root {
+  --bg: #0c0c0b;
+  --ink: #c8c2b4;
+  --ink-dim: #7a756c;
+  --ink-soft: #9a9488;
+  --head: #e6e0d2;
+  --rule: #2a2824;
+  --sans: "IBM Plex Sans", "Helvetica Neue", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--bg); color: var(--ink); }
+body {
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.45;
+  min-height: 100vh;
+  padding: 0 28px 40px;
+}
+
+.mast {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: baseline;
+  padding: 18px 0 12px;
+  border-bottom: 1px solid var(--rule); /* the one hairline */
+}
+.mast-l { display: flex; align-items: baseline; gap: 12px; }
+.word {
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  color: var(--head);
+}
+.who { font-size: 13px; color: var(--ink-dim); }
+.mast-c {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--ink-dim);
+  text-align: center;
+}
+.mast-r { text-align: right; font-family: var(--mono); font-size: 12px; color: var(--ink-soft); }
+
+/* desk strip is secondary */
+.desk {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 22px;
+  padding: 14px 0 8px;
+  margin-bottom: 28px;
+}
+.desk .k {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: var(--ink-dim);
+  margin-bottom: 4px;
+}
+.desk .v {
+  font-family: var(--mono);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--head);
+  letter-spacing: -0.01em;
+}
+.desk .s {
+  font-size: 11px;
+  color: var(--ink-dim);
+  margin-top: 3px;
+  max-width: 22em;
+}
+
+.wire { max-width: 860px; }
+.wire-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.wire-head h1 {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  color: var(--ink-dim);
+}
+#wire-meta { font-family: var(--mono); font-size: 11px; color: var(--ink-dim); }
+
+.row { padding: 0 0 22px; margin-bottom: 22px; }
+.row.current { margin-bottom: 28px; }
+.row + .row { /* space only — no extra rules */ }
+
+.slug {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px 14px;
+  margin-bottom: 6px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+.action { color: var(--ink-soft); font-weight: 600; }
+.stamp { color: var(--head); font-weight: 600; }
+.stamp.quiet { color: var(--ink-dim); }
+.stamp.hold { color: var(--head); }
+.stamp.wait { color: #c4b8a4; }
+.stamp.nonew { color: var(--ink-soft); }
+.when, .event { color: var(--ink-dim); letter-spacing: 0.04em; }
+.lead {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--ink-dim);
+  margin-bottom: 4px;
+}
+
+.headline {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--head);
+  letter-spacing: -0.015em;
+  line-height: 1.28;
+  margin: 2px 0 8px;
+}
+.row.current .headline { font-size: 24px; }
+.headline.quiet-line {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+
+.meta { font-size: 13px; color: var(--ink-soft); margin-bottom: 6px; }
+.meta a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
+.meta a:hover { color: var(--head); }
+.tags { font-family: var(--mono); font-size: 11px; color: var(--ink-dim); letter-spacing: 0.04em; margin-bottom: 8px; }
+.impl { font-size: 14px; color: var(--ink); max-width: 62em; margin-bottom: 8px; }
+.hold-line {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+.hold-line b { color: var(--head); font-weight: 600; }
+
+.rules {
+  margin-top: 36px;
+  max-width: 860px;
+  font-size: 12px;
+  color: var(--ink-dim);
+  line-height: 1.5;
+}
+
+@media (max-width: 860px) {
+  body { padding: 0 16px 32px; }
+  .mast { grid-template-columns: 1fr; gap: 4px; }
+  .mast-c, .mast-r { text-align: left; }
+  .desk { grid-template-columns: 1fr 1fr; gap: 16px 18px; }
+  .headline { font-size: 18px; }
+  .row.current .headline { font-size: 20px; }
+}

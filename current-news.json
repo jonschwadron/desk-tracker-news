@@ -1,0 +1,53 @@
+{
+  "agent": "NEWS",
+  "agent_id": "3f2295d1-7bdc-436c-a62c-3426d47747a6",
+  "ts_et": "2026-08-17T07:46:00-04:00",
+  "action": "card",
+  "symbol": "XAUUSD",
+  "tf": null,
+  "card": "hold",
+  "book_effect": "hold",
+  "quiet": false,
+  "event": "HORMUZ",
+  "when_et": "2026-08-17T00:00:00-04:00",
+  "headline": "US\u2013Iran MoU expired today; Hormuz traffic near-zero (0 Sunday vs 31 prior weekend)",
+  "source": "AP/Reuters/CNBC",
+  "url": "https://www.reuters.com/world/middle-east/shipping-via-hormuz-strait-slows-after-tanker-attacks-data-shows-2026-08-16/",
+  "correlating": [
+    "Hormuz",
+    "Iran",
+    "oil"
+  ],
+  "gold_implication": "MACRO agreed HOLD. Expiry is priced; reopen would hurt the long. No new long into Wed 19 Aug 2:00 PM ET minutes. Do not flatten 102034139 / SL 4050.",
+  "next": {
+    "event": "FOMC_MINUTES",
+    "when_et": "2026-08-19T14:00:00-04:00",
+    "book_effect": "wait",
+    "headline": "FOMC minutes (28\u201329 Jul) Wed 19 Aug 2:00 PM ET; meeting held 3.50\u20133.75%, three hike votes",
+    "url": "https://www.federalreserve.gov/newsevents/2026-august.htm"
+  },
+  "impact": "book_moving",
+  "do_not_flatten": true,
+  "tickets_do_not_touch": [
+    {
+      "id": "102034139",
+      "side": "buy",
+      "lots": 0.05,
+      "entry": 4043.95,
+      "sl": 4050.0
+    }
+  ],
+  "to": "MACRO",
+  "tape": {
+    "xauusd": 4399.92,
+    "dxy": 99.39,
+    "us10y": 4.69,
+    "brent": 89,
+    "asof_et": "2026-08-17T07:46:00-04:00"
+  },
+  "macro_score": {
+    "ts_et": "2026-08-17T07:46:00-04:00",
+    "book_effect": "hold",
+    "note": "MACRO agreed. HOLD 102034139 / SL 4050. No new long into minutes. Hormuz reopen would hurt the long; expiry is not that. Quiet unless Hormuz actually reopens or minutes text is a shock."
+  }
+}

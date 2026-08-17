@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WIRE · NEWS desk · XAUUSD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="mast">
+    <div class="mast-l">
+      <span class="word">WIRE</span>
+      <span class="who">NEWS desk</span>
+    </div>
+    <div class="mast-c">XAUUSD · gold only · Coinexx demo 5217539</div>
+    <div class="mast-r"><span id="clock">--:--:-- ET</span></div>
+  </header>
+
+  <section class="desk" aria-label="desk strip">
+    <div class="cell">
+      <div class="k" id="spot-k">LIVE SPOT</div>
+      <div class="v" id="spot-v">—</div>
+      <div class="s" id="spot-s">gold-api XAU · not Coinexx</div>
+    </div>
+    <div class="cell">
+      <div class="k">WAIT</div>
+      <div class="v" id="wait-v">—</div>
+      <div class="s" id="wait-s">MACRO card</div>
+    </div>
+    <div class="cell">
+      <div class="k">TICKET</div>
+      <div class="v" id="tix-v">102034139</div>
+      <div class="s" id="tix-s">SL 4050 · do not flatten</div>
+    </div>
+    <div class="cell">
+      <div class="k">M30 BOX</div>
+      <div class="v" id="m30-v">—</div>
+      <div class="s" id="m30-s">one line</div>
+    </div>
+    <div class="cell">
+      <div class="k">FVG</div>
+      <div class="v" id="fvg-v">—</div>
+      <div class="s" id="fvg-s">profit area · not a buy</div>
+    </div>
+  </section>
+
+  <main class="wire">
+    <div class="wire-head">
+      <h1>WIRE</h1>
+      <p id="wire-meta"></p>
+    </div>
+    <article id="current" class="row current"></article>
+    <div id="rows"></div>
+  </main>
+
+  <footer class="rules">
+    Book-moving only (FOMC/minutes, PCE, CPI, NFP, Hormuz, USD shock, war/Iran/oil/CB). Do not flatten a weeks-long gold long for ordinary US data. NEWS is not the calendar seat.
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
