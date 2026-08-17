@@ -18,7 +18,7 @@
     "Iran",
     "oil"
   ],
-  "gold_implication": "MACRO agreed HOLD. Expiry is priced; reopen would hurt the long. No new long into Wed 19 Aug 2:00 PM ET minutes. Do not flatten 102034139 / SL 4050.",
+  "gold_implication": "Desk standing HOLD. Expiry is priced; reopen would hurt the long. No new long into Wed 19 Aug 2:00 PM ET minutes. Do not flatten 102034139 / SL 4050.",
   "next": {
     "event": "FOMC_MINUTES",
     "when_et": "2026-08-19T14:00:00-04:00",
@@ -37,7 +37,7 @@
       "sl": 4050.0
     }
   ],
-  "to": "MACRO",
+  "to": "DESK",
   "tape": {
     "xauusd": 4399.92,
     "dxy": 99.39,
@@ -49,5 +49,10 @@
     "ts_et": "2026-08-17T07:46:00-04:00",
     "book_effect": "hold",
     "note": "MACRO agreed. HOLD 102034139 / SL 4050. No new long into minutes. Hormuz reopen would hurt the long; expiry is not that. Quiet unless Hormuz actually reopens or minutes text is a shock."
+  },
+  "desk_score": {
+    "ts_et": "2026-08-17T07:58:00-04:00",
+    "book_effect": "hold",
+    "note": "Seat split 17 Aug. Cards go to Desk (7acb6d1e), not MACRO (225f507a). HOLD 102034139 / SL 4050. No new long into minutes. Hormuz reopen would hurt the long. Quiet unless Hormuz actually reopens or minutes text is a shock."
   }
 }
